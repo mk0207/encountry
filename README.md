@@ -1,24 +1,38 @@
-# README
+# 概要
+- 海外の日本人と日本人をマッチさせるアプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 機能一覧
+- 国を検索
+- ユーザーの場所を表示
+- チャットのやり取り
+- 新規登録
+- ログイン
+- 記事投稿
 
-Things you may want to cover:
+# 技術一覧
+- AWS
+- Ruby
+- Ruby on rails
+- HTML CSS
+- MySQL
 
-* Ruby version
+# テーブル設計
 
-* System dependencies
+## users テーブル
+| Column   | Type   | Options     |
+| -------- | ------ | ----------- |
+| name     | string | null: false |
+| email    | string | null: false |
+| password | string | null: false |
 
-* Configuration
+### Association
+- has_many :messages
 
-* Database creation
+## messages テーブル
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| text   | string     | null: false                    |
+| user_id| references | null: false, foreign_key: true |
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :users
