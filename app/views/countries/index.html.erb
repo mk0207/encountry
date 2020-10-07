@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encountry</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <%# CSSの記述 %>
+  <style>
+  .header-back {
+  }
+  </style>
+</head>
+
+<body>
+<div class="all-bg">
+  <div class="header-back">
+    <div class="container">
+        <%= render "shared/header" %>
+    </div>
+  </div>
+  <%# 検索バー %>
+  <div class="search">
+  </div>
+
+  <div class='favorite'>
+    <h2 class="title">
+      人気旅行先
+    </h2>
+    <ul class='favorite-lists'>
+      <li class='list'>
+        <%= image_tag "favorite-1.png", class:"list-pic" %>
+        <span class='list-number'>1</span>
+        <h3 class='list-text'>
+          <span class='list-blue-text'>グアム</span>
+          （アメリカ）
+        </h3>
+        <p class='list-description'>
+          世界中から観光客が集まる観光地！　ビーチだけでなく、隠れた魅力がたくさん詰まっています！
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "favorite-2.png", class:"list-pic" %>
+        <span class='list-number'>2</span>
+        <h3 class='list-text'>
+          <span class='list-blue-text'>ソウル</span>
+          （韓国）
+        </h3>
+        <p class='list-description'>
+          近代的な超高層ビルやハイテクな地下鉄、ポップ カルチャーと、仏教寺院、古宮、昔ながらの露天市が混在する、巨大なメトロポリスです！
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "favorite-3.png", class:"list-pic" %>
+        <span class='list-number'>3</span>
+        <h3 class='list-text'>
+          <span class='list-blue-text'>バンコク</span>
+          （タイ）
+        </h3>
+        <p class='list-description'>
+          物価が安く治安も悪くないことから世界中の旅行者が訪れるタイの首都。毎年2000万人もの外国人観光客が訪れており、「世界航行先ランキング」では2016年より3年連続で世界一となっています！
+        </p>
+      </li>
+    </ul>
+  </div>
+
+    <%= render "shared/footer" %>
+</div>
+</body>
+</html>
+
