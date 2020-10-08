@@ -90,18 +90,18 @@
   cursor: pointer;
 }
 
-.register-btn {
+.register {
   width: 50%;
   margin: 0 auto;
 }
 
-.register-red-btn {
+.register-btn {
   width: 100%;
   background: #00CCFF;
   border: none;
   color: black;
-  line-height: 48px;
   font-size: 18px;
+  line-height: 48px;
   cursor: pointer;
 }
 
