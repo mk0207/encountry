@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Encountry</title>
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <%# CSSの記述 %>
-  <style>
-  .header-back {
-  }
-  </style>
-</head>
-
-<body>
 <div class="all-bg">
-  <div class="header-back">
-    <div class="container">
-        <%= render "shared/header" %>
-    </div>
-  </div>
+  <%= render "shared/header" %>
+
   <%# 検索バー %>
   <div class="search">
   </div>
@@ -67,6 +48,3 @@
 
     <%= render "shared/footer" %>
 </div>
-</body>
-</html>
-
