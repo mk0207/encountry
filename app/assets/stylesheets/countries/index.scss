@@ -5,18 +5,54 @@
 }
 
 .search {
-  height: 700px;
-  text-align: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
 }
+
+.left-c {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+.right-c {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+  
+}
+
+.li-c{
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.america, .china, .corea, .malaysia, .thailand, .philippines {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: none;
+}
+
 
 .favorite {
   background-color: white;
-  margin: 13vw;
-  padding: 2vw;
+  margin: 6vw;
+  padding: 4vw;
 }
 
 
 .favorite>.title {
+  font-size: 40px;
   background-color: white;
   text-align: center;
   font-weight: bold;
@@ -27,7 +63,7 @@
 .favorite-lists {
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 

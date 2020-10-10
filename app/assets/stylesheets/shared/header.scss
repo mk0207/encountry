@@ -3,6 +3,7 @@
 }
 
 .header {
+  height: 130px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -13,14 +14,12 @@
 
 .header-left {
   font-size: 50px;
-  font-weight: bold;
 }
 
 .header-right {
   display: flex;
   list-style: none;
   font-size: 30px;
-  font-weight: bold;
 }
 
 .user-name {
