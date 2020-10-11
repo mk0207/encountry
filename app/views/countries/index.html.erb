@@ -13,6 +13,13 @@
       <li class="li-c"><%=link_to 'タイ（準備中）', root_path, class:"thailand" %></li>
       <li class="li-c"><%=link_to 'フィリピン（準備中）', root_path, class:"philippines" %></li>
     </div>
+
+
+    <%= form_with model: @country, local: true do |f| %>
+      <div>
+        <%= f.collection_select(:live_city_id, LiveCity.all, :id, :name, {}, {class:"live-city-select"}) %>
+      </div>
+    <% end %>
   </div>
 
   <%# 人気旅行先 %>

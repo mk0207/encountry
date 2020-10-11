@@ -1,6 +1,7 @@
 class LiveCity < ActiveHash::Base
   self.data = [
-    { id:	1	, name: '	アメリカ		 ' },
+    { id:	0	, name: '	-------	 ' },
+    { id:	1	, name: '	アメリカ	 ' },
     { id:	2	, name: '	アイスランド	(準備中)	 ' },
     { id:	3	, name: '	アイルランド	(準備中)	 ' },
     { id:	4	, name: '	アゼルバイジャン	(準備中)	 ' },
