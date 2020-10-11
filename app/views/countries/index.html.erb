@@ -1,10 +1,10 @@
 <div class="all-bg">
   <%= render "shared/header" %>
 
-  <%# 検索バー %>
+  <%# 国一覧 %>
   <div class="search">
     <div class="left-c">
-      <li class="li-c"><%=link_to 'アメリカ', root_path, class:"america" %></li>
+      <li class="li-c"><%=link_to 'アメリカ', new_country_path, class:"america" %></li>
       <li class="li-c"><%=link_to '中国（準備中）', root_path, class:"china" %></li>
       <li class="li-c"><%=link_to '韓国（準備中）', root_path, class:"corea" %></li>
     </div>
@@ -15,6 +15,7 @@
     </div>
   </div>
 
+  <%# 人気旅行先 %>
   <div class='favorite'>
     <h2 class="title">
       人気旅行先
