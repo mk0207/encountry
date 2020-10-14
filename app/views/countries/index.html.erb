@@ -2,23 +2,19 @@
   <%= render "shared/header" %>
 
   <%# 国一覧 %>
+    <div class="index-title">
+        <p class="it-1">身近にいる、特別な人</p>
+        <p class="it-2">海外に出ている日本人は意外と多い</p>
+        <p class="it-2">そんな人と話してみませんか？</p>
+    </div>
+
   <div class="search">
-    <div class="left-c">
-      <li class="li-c"><%=link_to 'アメリカ', new_country_path, class:"america" %></li>
-      <li class="li-c"><%=link_to '中国（準備中）', root_path, class:"china" %></li>
-      <li class="li-c"><%=link_to '韓国（準備中）', root_path, class:"corea" %></li>
-    </div>
-    <div class="right-c">
-      <li class="li-c"><%=link_to 'マレーシア（準備中）', root_path, class:"malaysia" %></li>
-      <li class="li-c"><%=link_to 'タイ（準備中）', root_path, class:"thailand" %></li>
-      <li class="li-c"><%=link_to 'フィリピン（準備中）', root_path, class:"philippines" %></li>
-    </div>
 
 
     <%= form_with model: @country, local: true do |f| %>
-      <div>
         <%= f.collection_select(:live_city_id, LiveCity.all, :id, :name, {}, {class:"live-city-select"}) %>
-      </div>
+        <%= f.submit "移動" ,class:"sell-btn" %>
+
     <% end %>
   </div>
 

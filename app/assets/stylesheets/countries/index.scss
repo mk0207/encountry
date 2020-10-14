@@ -4,48 +4,36 @@
   background-repeat: no-repeat;
 }
 
+.index-title {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.it-1 {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.it-2 {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;  
+}
+
 .search {
-  height: 400px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
-}
-
-.left-c {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 100px;
-}
-
-.right-c {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 100px;
-  
-}
-
-.li-c{
-  height: 100px;
-  color: white;
-  font-weight: bold;
-  font-size: 40px;
-}
-
-.america, .china, .corea, .malaysia, .thailand, .philippines {
-  color: white;
-  font-weight: bold;
-  font-size: 40px;
-  text-decoration: none;
 }
 
 .live-city-select{
-  height: 30px;
-  width: 250px;
+  height: 40px;
+  width: 400px;
 }
 
 .favorite {
