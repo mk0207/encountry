@@ -4,7 +4,7 @@
    </div>
     <ul class='header-right'>
       <% if user_signed_in? %>
-        <li><%= link_to current_user.name, "#", class: "user-name" %></li>
+        <li><%= link_to current_user.name, current_user, method: :get, class: "user-name" %></li>
         <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
       <% else %>
         <li><%= link_to 'ログイン', new_user_session_path, class: "header-login" %></li>
