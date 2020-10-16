@@ -12,4 +12,8 @@ class CountriesController < ApplicationController
   def create
   end
 
+  def edit
+    @user = User.find(params[:id])
+  end
+
 end
