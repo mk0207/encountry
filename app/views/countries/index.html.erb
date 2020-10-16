@@ -1,20 +1,18 @@
 <div class="all-bg">
   <%= render "shared/header" %>
+  <div class="index-title">
+      <p class="it-1">身近にいる、特別な人</p>
+      <p class="it-2">海外に出ている日本人は意外と多い</p>
+      <p class="it-2">そんな人と話してみませんか？</p>
+  </div>
 
   <%# 国一覧 %>
-    <div class="index-title">
-        <p class="it-1">身近にいる、特別な人</p>
-        <p class="it-2">海外に出ている日本人は意外と多い</p>
-        <p class="it-2">そんな人と話してみませんか？</p>
-    </div>
-
   <div class="search">
-
-
-    <%= form_with model: @country, local: true do |f| %>
-        <%= f.collection_select(:live_city_id, LiveCity.all, :id, :name, {}, {class:"live-city-select"}) %>
-        <%= f.submit "移動" ,class:"sell-btn" %>
-
+    <%= form_with model: @country, url: new_country_path, local: true do |f| %>
+      <%= f.collection_select(:live_city_id, LiveCity.all, :id, :name, {}, {class:"live-city-select"}) %>
+    <% end %>
+    <%= link_to new_country_path do %>
+      <button class="country-btn">移動</button>
     <% end %>
   </div>
 

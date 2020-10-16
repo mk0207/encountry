@@ -66,6 +66,15 @@
   margin-top: 3px;
 }
 
+.indispensable {
+  color: red;
+}
+
+.reg-c-select {
+  display: flex;
+  justify-content: center;
+}
+
 .form-info-header {
   font-weight: bold;
 }

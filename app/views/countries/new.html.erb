@@ -4,24 +4,27 @@
   <h3 class="america-title">アメリカ</h3>
 
 <%# ユーザー一覧 %>
-  <div class='user-america'>
+  <div class='user-name-list'>
     <h2 class='user-title'>ユーザー一覧</h2>
     <ul class='user-lists'>
-      <% @user.each do |users| %>
-      <li class='list'>
-        <%= link_to user_path(users.id), method: :get do %>
-          <div class='user-img-content'>
-            <%= image_tag users.image, class: "user-img" %>
-          </div>
+      <% @users.each do |users| %>
+        <li class='list'>
           <div class='user-info'>
-            <h3 class='user-name'>
-              <%= users.name %>
+            <h3 class='all-user-list'>
+            <%= link_to users.name, "#", class: "user-list" %>
             </h3>
           </div>
-        <% end %>
-      </li>
+        </li>
+      <% end %>
+    <%# ユーザー登録がない場合 %>
+      <% if @users.length == 0 %>
+        <h3>
+          滞在者はいません
+        </h3>
       <% end %>
     </ul>
   </div>
 <%# チャット画面のみログイン必須 %>
+
+  <%= render "shared/footer" %>
 </div>
