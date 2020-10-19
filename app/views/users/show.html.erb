@@ -1,0 +1,45 @@
+<%= render "shared/second-header"%>
+
+<%= form_with model: @user, class: 'registration-main', local: true do |f| %>
+<div class='form-wrap'>
+  <div class='form-header'>
+    <h1 class='form-header-text'>
+      会員情報
+    </h1>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">ネーム</label>
+    </div>
+    <div class="input-default">
+      <%= @user.name %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">メールアドレス</label>
+    </div>
+    <div class="input-default">
+      <%= @user.email %>
+    </div>
+
+  </div>
+
+  <div class='edit'>
+    <%= link_to edit_user_path do %>
+      <button class="edit-btn">編集する</button>
+    <% end %>
+  </div>
+  <div class="root-btn">
+    <%= link_to root_path do %>
+      <button class="input-default">戻る</button>
+    <% end %>
+  </div>
+</div>
+<% end %>
+
+
+
+<%= render "shared/footer"%>

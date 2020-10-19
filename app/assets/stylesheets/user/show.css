@@ -60,51 +60,13 @@
   resize: none;
 }
 
-.info-text {
-  color: #888;
-  font-size: 15px;
-  margin-top: 3px;
-}
-
-.indispensable {
-  color: red;
-}
-
-.reg-c-select {
-  display: flex;
-  justify-content: center;
-}
-
-.form-info-header {
-  font-weight: bold;
-}
-
-.form-info-text {
-  font-size: 15px;
-}
-
-.form-bottom-text {
-  font-size: 15px;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.form-bottom-text:last-child {
-  margin: 0;
-  padding-bottom: 50px;
-}
-
-.form-bottom-text>span {
-  color: #0099e8;
-  cursor: pointer;
-}
-
-.register {
-  width: 50%;
+.edit {
+  width: 30%;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
-.register-btn {
+.edit-btn {
   width: 100%;
   background: #00CCFF;
   border: none;
@@ -114,9 +76,8 @@
   cursor: pointer;
 }
 
-.register-info {
-  margin: 30px 180px 0 0;
-  color: #0099e8;
-  text-align: right;
-  cursor: pointer;
+.root-btn {
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 20px;
 }

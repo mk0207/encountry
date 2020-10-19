@@ -1,10 +1,22 @@
 <div class="all-bg">
   <%= render "shared/header" %>
-
-  <%# 検索バー %>
-  <div class="search">
+  <div class="index-title">
+      <p class="it-1">身近にいる、特別な人</p>
+      <p class="it-2">海外に出ている日本人は意外と多い</p>
+      <p class="it-2">そんな人と話してみませんか？</p>
   </div>
 
+  <%# 国一覧 %>
+  <div class="search">
+    <%= form_with model: @country, url: new_country_path, local: true do |f| %>
+      <%= f.collection_select(:live_city_id, LiveCity.all, :id, :name, {}, {class:"live-city-select"}) %>
+    <% end %>
+    <%= link_to new_country_path do %>
+      <button class="country-btn">移動</button>
+    <% end %>
+  </div>
+
+  <%# 人気旅行先 %>
   <div class='favorite'>
     <h2 class="title">
       人気旅行先

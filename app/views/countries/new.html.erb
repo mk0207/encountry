@@ -1,0 +1,30 @@
+<div class="america-bg">
+  <%= render "shared/header" %>
+
+  <h3 class="america-title">アメリカ</h3>
+
+<%# ユーザー一覧 %>
+  <div class='user-name-list'>
+    <h2 class='user-title'>ユーザー一覧</h2>
+    <ul class='user-lists'>
+      <% @users.each do |users| %>
+        <li class='list'>
+          <div class='user-info'>
+            <h3 class='all-user-list'>
+            <%= link_to users.name, user_path(users.id), class: "user-list" %>
+            </h3>
+          </div>
+        </li>
+      <% end %>
+    <%# ユーザー登録がない場合 %>
+      <% if @users.length == 0 %>
+        <h3>
+          滞在者はいません
+        </h3>
+      <% end %>
+    </ul>
+  </div>
+<%# チャット画面のみログイン必須 %>
+
+  <%= render "shared/footer" %>
+</div>
