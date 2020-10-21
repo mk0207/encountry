@@ -60,6 +60,22 @@
   resize: none;
 }
 
+.message {
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.message-btn {
+  width: 100%;
+  background: #00CCFF;
+  border: none;
+  color: black;
+  font-size: 18px;
+  line-height: 48px;
+  cursor: pointer;
+}
+
 .edit {
   width: 30%;
   margin: 0 auto;
